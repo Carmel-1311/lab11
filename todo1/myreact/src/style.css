@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: start center;
+  padding-top: 52px;
+  font-family: "Times New Roman", serif;
+  background: #f7fbfd;
+  color: black;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.food-container {
+  width: 430px;
+  min-height: 190px;
+  border: 2px solid #97c4cf;
+  padding: 0 20px 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(51, 98, 111, 0.14);
+}
+
+.food-container h3 {
+  margin: 8px 0 22px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mode-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  margin: -2px -20px 0;
+  padding: 4px 8px;
+  border: 1px solid #aab48a;
+  background: #fffef8;
+}
+
+.mode-bar span {
+  font-size: 16px;
+}
+
+.mode-bar button {
+  min-width: 56px;
+  padding: 1px 8px;
+  border: 1px solid #9da78e;
+  border-radius: 4px;
+  background: #f5f7ff;
+  cursor: pointer;
+}
+
+.food-list {
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c6d68c;
+}
+
+.status-text {
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.status-text.error {
+  color: #b3261e;
+}
+
+.food-list ul {
+  width: fit-content;
+  margin: 0 auto;
+  padding-left: 22px;
+}
+
+.food-list li {
+  margin: 5px 0;
+  line-height: 1.25;
+}
+
+.food-list button {
+  margin-left: 4px;
+  padding: 1px 5px;
+  line-height: 1.1;
+}
+
+.best-seller {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 4px;
+  border: 1px solid #b08011;
+  border-radius: 999px;
+  background: #ffe58a;
+  color: #8b1f1f;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.type-name {
+  margin-left: 4px;
+  color: #3d6270;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.food-form {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.food-form h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.food-form label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: 1px 0;
+}
+
+.food-form input {
+  width: 170px;
+  height: 20px;
+}
+
+.food-form select {
+  width: 92px;
+  height: 22px;
+}
+
+.food-form button {
+  margin-top: 2px;
+  padding: 1px 6px;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 16px;
+  }
+
+  .food-container {
+    width: 100%;
+  }
+}
